@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let brand of brands">
+            <td>{{ brand.id }}</td>
+            <td>{{ brand.name }}</td>
+            <td>
+                <!-- <button (click)="editBrand(brand)">Edit</button>
+                <button (click)="deleteBrand(brand.id)">Delete</button> -->
+            </td>
+        </tr>
+    </tbody>
+</table>
