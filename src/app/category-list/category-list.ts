@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Import CommonModule for structural directives like *ngFor
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-category-list',
-  imports: [ CommonModule ], // Import CommonModule for structural directives like *ngFor
+  imports: [ CommonModule ], 
   templateUrl: './category-list.html',
   styleUrl: './category-list.css'
 })
