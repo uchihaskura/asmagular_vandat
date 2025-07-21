@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';     // ✅ cho *ngIf, *ngFor
 import { FormsModule } from '@angular/forms';       // ✅ cho [(ngModel)]
+import { RouterLink } from '@angular/router';
 
 @Component({
   standalone: true,                                 // ✅ thêm dòng này
   selector: 'app-product-list',
   templateUrl: './product-list.html',
   styleUrls: ['./product-list.css'],
-  imports: [CommonModule, FormsModule]              // ✅ thêm dòng này
+  imports: [CommonModule, FormsModule,RouterLink]              // ✅ thêm dòng này
 })
 export class ProductListComponent {
   filterText = '';
